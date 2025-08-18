@@ -108,6 +108,22 @@ After implementing these settings:
 - **Social preview** creates attractive link previews
 - **Organized structure** demonstrates project maturity
 
+## 🔧 Verification Tool
+
+To verify that all recommended settings have been applied correctly, use the provided verification script:
+
+```bash
+python3 scripts/verify-metadata.py
+```
+
+This script will check:
+- ✅ Repository topics configuration
+- ✅ Repository description accuracy
+- ✅ Repository features enablement
+- ✅ Compliance with recommendations
+
+The script provides detailed feedback and instructions for any missing configurations.
+
 ---
 
 *Configure these settings to maximize the project's visibility and appeal to the C++ and game development communities.*
