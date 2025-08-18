@@ -46,9 +46,16 @@ This project showcases:
 
 ```
 console-snake-cpp/
-├── LICENSE          # MIT License
-├── README.md        # Project documentation
-└── .gitignore       # Git ignore rules
+├── LICENSE             # MIT License
+├── README.md           # Project documentation
+├── REPOSITORY_SETUP.md # GitHub repository configuration guide
+├── CMakeLists.txt      # CMake build configuration
+├── .gitignore          # Git ignore rules
+├── docs/               # Documentation directory
+├── src/                # Source code directory (planned)
+└── scripts/            # Utility scripts
+    ├── verify-metadata.py  # Repository metadata verification
+    └── README.md           # Scripts documentation
 ```
 
 ## 🏷️ Topics
@@ -66,6 +73,13 @@ Contributions are welcome! Feel free to:
 - Suggest new features  
 - Submit pull requests
 - Improve documentation
+
+### 📋 Repository Setup
+
+For repository administrators, see:
+- **[METADATA_CHECKLIST.md](METADATA_CHECKLIST.md)** - Complete configuration checklist
+- **[REPOSITORY_SETUP.md](REPOSITORY_SETUP.md)** - Detailed setup guide
+- **[scripts/verify-metadata.py](scripts/verify-metadata.py)** - Automated verification tool
 
 ---
 
