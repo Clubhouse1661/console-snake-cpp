@@ -20,42 +20,42 @@ else()
     add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-# Source files (to be added when source code is implemented)
+# Source files
 set(SOURCES
-    # src/main.cpp
-    # src/game.cpp
-    # src/snake.cpp
-    # src/food.cpp
-    # src/console.cpp
-    # src/utils.cpp
+    src/main.cpp
+    src/game.cpp
+    src/snake.cpp
+    src/food.cpp
+    src/console.cpp
+    src/utils.cpp
 )
 
 set(HEADERS
-    # src/game.h
-    # src/snake.h
-    # src/food.h
-    # src/console.h
-    # src/utils.h
+    src/game.h
+    src/snake.h
+    src/food.h
+    src/console.h
+    src/utils.h
 )
 
-# Create executable (commented out until source files exist)
-# add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
+# Create executable
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 
 # Windows console subsystem
-# if(WIN32)
-#     set_target_properties(${PROJECT_NAME} PROPERTIES
-#         WIN32_EXECUTABLE FALSE  # Console application
-#     )
-# endif()
+if(WIN32)
+    set_target_properties(${PROJECT_NAME} PROPERTIES
+        WIN32_EXECUTABLE FALSE  # Console application
+    )
+endif()
 
 # No external dependencies required - using only:
 # - Standard C++ library
 # - Windows Console API (windows.h)
 
 # Installation (optional)
-# install(TARGETS ${PROJECT_NAME}
-#     RUNTIME DESTINATION bin
-# )
+install(TARGETS ${PROJECT_NAME}
+    RUNTIME DESTINATION bin
+)
 
 # Package configuration
 set(CPACK_PACKAGE_NAME "Console Snake C++")
