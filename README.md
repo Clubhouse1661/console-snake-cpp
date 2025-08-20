@@ -16,6 +16,30 @@ Classic Snake game implemented in **C++** that runs directly in the **Windows co
 - **Classic gameplay** - nostalgic Snake game experience
 - **Cross-compile ready** - designed for CMake build system
 
+### 🏆 High Score System
+- Persistent score storage in local file (`highscores.txt`)
+- Automatic high score detection and entry
+- View top 10 high scores from main menu
+- Player name entry for new records
+
+### ⚡ Difficulty Levels
+- **Easy**: Slow speed (200ms frame delay)
+- **Normal**: Medium speed (150ms frame delay) 
+- **Hard**: Fast speed (100ms frame delay)
+- Dynamic speed increase as levels progress
+
+### 🎨 Color Support
+- Enhanced console colors for better visuals
+- Different colors for snake head, body, and food
+- Color-coded UI elements and menus
+- Bright colors for important information
+
+### 🔊 Sound Effects
+- Console beep integration for eating food
+- Game over sound effects
+- Different frequencies for different events
+- Optional movement sounds (commented out)
+
 ## 🛠️ Technical Details
 
 - **Language**: C++
@@ -27,11 +51,23 @@ Classic Snake game implemented in **C++** that runs directly in the **Windows co
 
 ## 🚀 Quick Start
 
-1. Download the executable
-2. Double-click to run
+### Option 1: Run Pre-built Executable
+1. Download `ConsoleSnakeCpp.exe`
+2. Double-click to run or use `run_game.bat`
 3. Use arrow keys to control the snake
 4. Eat food to grow and increase your score
 5. Avoid hitting walls or yourself!
+
+### Option 2: Build from Source
+1. Ensure you have GCC installed
+2. Run `build.bat` to compile the game
+3. Run `run_game.bat` to start playing
+
+### 🎮 Game Controls
+- **Arrow Keys**: Move snake
+- **Space/ESC**: Pause game
+- **Number Keys**: Navigate menus
+- **Enter**: Confirm selections
 
 ## 🎯 Game Development
 
